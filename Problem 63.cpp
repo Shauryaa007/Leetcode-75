@@ -52,6 +52,7 @@ public:
             {
                 if(i-1>=0)dp[i][j]+=dp[i-1][j]; // up
                 if(j-1>=0)dp[i][j]+=dp[i][j-1];  //left
+                
             }
         }
         return dp[m-1][n-1];
